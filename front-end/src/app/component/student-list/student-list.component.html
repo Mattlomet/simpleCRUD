@@ -1,0 +1,36 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Grade</th>
+            <th scope="col">Currently Enrolled</th>
+            <th scope="col">GPA</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students" >
+            <td class="">{{ student.id }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.grade }}</td>
+            <td>{{ student.currentlyEnrolled }}</td>
+            <td>{{ student.gpa }}</td>
+            <td>
+              <span (click)='updateStudent(student)' class="btn btn-primary">
+                update
+              </span>
+            </td>
+            <td>
+              <span (click)='deleteStudent(student.id)' class="btn btn-danger">
+                delete
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

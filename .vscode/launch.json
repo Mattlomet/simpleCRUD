@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RestDemoApplication<restdemo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.company.RestDemo.RestDemoApplication",
+            "projectName": "restdemo",
+            "args": ""
+        }
+    ]
+}
